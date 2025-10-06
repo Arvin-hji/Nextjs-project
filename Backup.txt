@@ -1,0 +1,119 @@
+import Box from "./Components/Box";
+import Main from "./Components/Main";
+export default function Home() {
+  return (
+    <div className="flex justify-center items-center flex-col ">
+      <div className="flex flex-row">
+        <div className="bg-blue-700 w-290px h-375px rounded-3xl ml-4 mt-3 shadow-2xl">
+          <img
+            src="/image/1-1.jpg"
+            alt="کتاب درس"
+            className="w-290px h-375px rounded-2xl"
+          />
+        </div>
+        <div className="bg-fuchsia-700 w-930px h-375px rounded-3xl ml-10 mt-3 shadow-2xl">
+          <img
+            src="/image/1-2.jpeg"
+            alt="دکتر آی کیو"
+            className="w-930px h-375px rounded-2xl"
+           />
+        </div>
+      </div>
+      <Books />
+      <Books_2 />
+      <Books_3 />
+      <row />
+    </div>
+    
+  );
+}
+
+export function Books() {
+  return (
+    <div className="w-full max-w-328 shadow-2xl rounded-b-3xl">
+      <div className="flex justify-between rounded-3xl w-full bg-blue-200 py-4 px-18 mt-26">
+        <Box image_A="\Image\2\English.jpeg">کتاب های زبان</Box>
+        <Box image_A="\Image\2\College.jpeg">کتاب های دانشگاهی</Box>
+        <Box image_A="\Image\2\Stationery.jpeg"> لوازم التحریر</Box>
+        <Box image_A="\Image\2\Game.jpeg"> بازی آموزشی</Box>
+        <Box image_A="\Image\2\Novle.jpeg"> رمان بزرگسال</Box>
+      </div>
+    </div>
+  );
+}
+
+export function Books_2() {
+  return (
+    <div className="w-full max-w-328 overflow-hidden mt-7">
+      {/* Red Header */}
+      <div className="bg-red-500 py-4 px-6 mt-8  rounded-t-3xl flex flex-col items-end text-right">
+        <p className="text-white text-xl font-bold leading-tight">
+          !پیشنهاد ویژه
+        </p>
+        <div className="border-b border-white w-full mt-2"></div>
+      </div>
+      {/* Books_2 Section */}
+      <div className="flex flex-row justify-between items-center rounded-b-2xl bg-red-500 p-5">
+        <a href="https://www.gajmarket.com/%D8%AA%D8%AE%D9%81%DB%8C%D9%81%D8%A7%D8%AA-%D9%88%DB%8C%DA%98%D9%87">
+          <img src="\Image\Gajaneh-Takhfif.png" width={175} />
+        </a>
+        <div className="text-white text-right text-2xl font-bold leading-tight gap-3"></div>
+        <Main
+          image_B="\Image\3\Paint-Book.jpeg"
+          title="دفتر نقاشی 50 برگ"
+          price="65.250 تومان"
+        ></Main>
+        <Main
+          image_B="\Image\3\Poem-Book.jpeg"
+          title="کتاب اشعار استاد رحمانی"
+          price="89.999 تومان"
+        />
+        <Main
+          image_B="\Image\3\Inteligent-Game.jpeg"
+          title="بازی فکری بزرگراه"
+          price="145.000 تومان"
+        />
+        <Main
+          image_B="\Image\3\Din o zendegi.jpeg"
+          title="کتاب دین و زندگی دهم"
+          price="74.000 تومان"
+        />
+      </div>
+    </div>
+  );
+}
+export function Books_3() {
+  return (
+    <div className="bg-neutral-200 py-4 px-6 mt-8 w-full rounded-t-3xl flex flex-col items-end text-right">
+      <p className="text-black text-xl font-bold leading-tight">کمک درسی</p>
+      <div className="border-b-2 w-23 mt-2 border-b-green-600"></div>
+      <div className="flex gap-4 bg-neutral-100 p-4 rounded-3xl mt-14 w-full ">
+        <Main
+          image_B="\Image\4\Intelligence Book.jpeg"
+          title="کتاب هوش سرعت و دقت ششم"
+          price="250.750 تومان"
+        />
+        <Main
+          image_B="\Image\4\mantegh.jpeg"
+          title="کتاب منطق دهم انسانی"
+          price="56.100 تومان"
+        />
+        <Main
+          image_B="\Image\4\physics.jpeg"
+          title="کتاب فیزیک یازدهم ریاضی"
+          price="236.000 تومان"
+        />
+        <Main
+          image_B="\Image\4\riyazi.jpeg"
+          title="کتاب ریاضی هفتم"
+          price="180.000 تومان"
+        />
+        <Main
+          image_B="\Image\4\science.jpeg"
+          title="کتاب علوم هشتم"
+          price="134.000 تومان"
+        />
+      </div>
+    </div>
+  );
+}
