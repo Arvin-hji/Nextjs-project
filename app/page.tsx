@@ -7,6 +7,8 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <div>Product-Page Section</div>
+       
       <div className="flex justify-center items-center flex-col ">
         <div className="flex flex-row">
           <div className="bg-blue-700 w-290px h-375px rounded-3xl ml-4 mt-3 shadow-2xl">
@@ -38,7 +40,7 @@ export default function Home() {
         <Row_3 />
         <Books_8 />
         <Books_9 />
-''
+
         <div className=" mt-5 rounded-3xl flex justify-center">
           <a href="https://www.gajmarket.com/incredible-offers/board-games?page=1&pageSize=32&sortType=most_discount&filters[0][static-filter][0]=stock">
             <img
