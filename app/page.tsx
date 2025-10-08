@@ -6,9 +6,7 @@ import Footer from "./Components/Footer";
 export default function Home() {
   return (
     <div>
-      <Header />
-      <div>Product-Page Section</div>
-       
+      <Header />       
       <div className="flex justify-center items-center flex-col ">
         <div className="flex flex-row">
           <div className="bg-blue-700 w-290px h-375px rounded-3xl ml-4 mt-3 shadow-2xl">

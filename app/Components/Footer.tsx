@@ -19,7 +19,7 @@ export default function Footer() {
       </div>
       <div className="bg-neutral-200 flex flex-col h-60 w-70">
         <div>
-          <p className="bg-green-400 font-medium h-8 text-center rounded-2xl mt-16">
+          <p className="bg-[#90D5E4] font-medium h-8 text-center rounded-2xl mt-16">
             .کارشناسان ما میزبان صدایتان هستند
           </p>
           <div className="bg-neutral-200 text-black pl-5 font-semibold w-fit mt-3">
